@@ -1,0 +1,11 @@
+VSS(Viaual SourceSafe)中的几个关键概念：
+
+1、VSS是使用服务器、本地机的概念来进行操作的，它认为所有需要操作的文件都存在服务器版本文件和本地机版本文件，无论用户的VSS架构是服务器客户机形式还是个人单机版形式，它的机制都是这样；
+
+2、服务器版本文件是一个绝对受配置管理软件限制的文件，用户只能通过VSS规定的权限和操作方法修改它，因为它并不是一个人的，它是大家的。本地文件是一个基本不受限制的文件，可以像操作本地文件一样操作它；
+
+3、VSS由Visual SourceSafe 6.0 Admin、Microsoft Visual SourceSafe 6.0 、Analyze VSS DB、Analyze & Fix VSS DB共4部分组成。Analyze VSS DB、Analyze & Fix VSS DB 两个工具不是很常用，前者用于检查SourceSafe数据库文件的完整性，后者主要是修正SourceSafe数据库文件存在的错误。Visual SourceSafe 6.0 Admin的功能类似于Windows 2000的用户管理器，软件配置管理人员用它来分配用户和设定相应权限。
+
+4、由于VSS是通过Windows的网络共享来完成服务器端受控版本文件的共享，因此VSS服务器的数据库必须建立在服务器的一个完全共享的目录之中。否则客户端无法获得数据库中的文件。
+
+
